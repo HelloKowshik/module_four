@@ -3,9 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <title>Bootstrap-1</title>
+    <style>
+        h1{
+            margin-top: 100px;
+        }
+        .flex-container{
+            height: 300px;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img-10.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-11.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-12.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     <h1>Bootstrap Practice</h1>
+    <h1>Buttons</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <h1>Paragraphs</h1>
+    <p class="text-primary">I am a Primary Paragraph</p>
+    <p class="text-warning">I am a Warning Paragraph</p>
+    <p class="text-danger">I am a Danger Paragraph</p>
+    <h1>Background</h1>
+    <div class="bg-primary text-white">
+        <h1>My News</h1>
+        <p>I am learning Bootstrap</p>
+    </div>
+    <div class="bg-dark text-white">
+        <h1>My skills</h1>
+        <p>Basic Programming</p>
+    </div>
+    <h1>Images</h1>
+    <!-- <img class="img-fluid img-thumbnail w-25 rounded" src="img/img-7.jpg" alt="Image-1"> -->
+    <img class="img-fluid w-25" src="img/img-7.jpg" alt="Image-1">
+    <img class="img-fluid w-25" src="img/img-6.jpg" alt="Image-1">
+    <img class="img-fluid w-25" src="img/img-5.jpg" alt="Image-1">
+    <h1>Cards</h1>
+    <div class="card" style="width: 20rem;">
+        <img src="img/img-2.jpg" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">My Image</h5>
+          <p class="card-text">Image Description</p>
+          <a href="#" class="btn btn-primary">Travel Blog</a>
+        </div>
+      </div>
+      <div class="card bg-dark text-white" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">Another Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Another Card subtitle</h6>
+          <p class="card-text">Some quick example card's content.</p>
+          <a href="#" class="card-link">Card link Info</a>
+          <a href="#" class="card-link">Another Info</a>
+        </div>
+      </div>
+      <div class="card mb-3 border-secondary" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="img/img-1.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Img title</h5>
+              <p class="card-text">This is a wider card with supporting text.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/img-3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/img-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/img-7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      
+     <h1>Navigation Bar</h1> 
+     <nav class="nav nav-pills">
+         <a class="nav-link" href="#">Home</a>
+         <a class="nav-link" href="#">Products</a>
+         <a class="nav-link" href="#">Contact Us</a>
+         <a class="nav-link" href="#">Clients</a>
+     </nav>
+     <div class="container">
+         <h1>Grid System</h1>
+         <div class="row">
+             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium optio officiis delectus, suscipit dicta saepe praesentium laborum facere vero aspernatur tempora beatae quisquam molestiae fugit perferendis neque. Harum sed deleniti cum dolorem iusto eaque nisi perspiciatis mollitia qui, ut officiis dolor deserunt quibusdam impedit cumque, id fugiat consequatur? Ipsum.</p>
+             </div>
+             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi doloribus eos tempora deleniti quibusdam odit doloremque sunt ea, labore molestias, laborum, earum ut saepe officia? Illo recusandae esse deserunt dicta possimus incidunt, nostrum eius ullam blanditiis impedit similique facere aspernatur nulla neque perferendis unde nesciunt at. Fuga dolore commodi ea voluptatum modi nisi explicabo quis. Recusandae hic numquam maiores.
+                 </p>
+             </div>
+             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quas culpa corporis explicabo in, nisi corrupti ab, assumenda velit suscipit nobis aliquid? Reiciendis veritatis at facere quaerat natus aut sunt dolor numquam, impedit eaque eveniet iure beatae dignissimos nulla, ducimus magni, dolorem magnam hic! Adipisci fugit repellat assumenda sapiente nostrum nam ut dignissimos suscipit soluta rem. Aperiam id autem nemo?</p>
+             </div>
+             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur eius, quidem pariatur saepe dicta tenetur illo similique quos suscipit doloribus, iure culpa dignissimos, labore voluptates officiis atque incidunt architecto! Eum, molestiae placeat explicabo animi ab dignissimos et vero libero. Qui recusandae assumenda reprehenderit libero esse voluptatum quo. Nisi obcaecati adipisci debitis. A mollitia adipisci maxime sit blanditiis libero laboriosam.</p>
+             </div>
+         </div>
+     </div>
+     <div class="container">
+         <h1>Flex Boxes</h1>
+         <!-- <div class="d-flex flex-row-reverse"> -->
+            <!-- <div class="d-flex flex-column-reverse"> -->
+        <!-- <div class="d-flex justify-content-between">
+            <div class="bg-primary">Flex Box-1</div>
+            <div class="bg-danger">Flex Box-2</div>
+            <div class="bg-success">Flex Box-3</div>
+         </div> -->
+         <div class="d-flex flex-container justify-content-center align-items-center">
+             <div>Vertical Box-1</div>
+             <div>Vertical Box-2</div>
+             <div>Vertical Box-3</div>
+         </div>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>     
 </body>
 </html>
